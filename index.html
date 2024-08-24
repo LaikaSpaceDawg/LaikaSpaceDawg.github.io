@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Link to the favicon -->
     <link rel="icon" type="image/png" sizes="64x64" href="/assets/icons/laika8bit.png">
     <style>
-        /* Set the background color of the body */
         body {
             display: flex;
-            justify-content: center; /* Center horizontally */
-            align-items: center; /* Center vertically */
-            height: 100vh; /* Full viewport height */
-            margin: 0; /* Remove default margin */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
             background-color: #1f1f1f;
             color: white;
             font-family: Consolas, 'Courier New', monospace;
         }
         .content {
             display: flex;
-            flex-direction: column; /* Stack children vertically */
-            align-items: center; /* Center children horizontally */
+            flex-direction: column;
+            align-items: center;
         }
-        /* Set the text color of h1 */
-        h1 {
+        h1, p {
             color: white;
         }
         p {
-            color: white;
-            font-size: 0.8em; /* Smaller font size */
-            font-weight: normal; /* Override bold if needed */
-            margin-top: 0; /* Remove space above if desired */
-            margin-bottom: 20px; /* Space below the paragraph */
+            font-size: 0.8em;
+            font-weight: normal;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        .icon-button {
+            border: 2px solid white; /* White border around the button */
+            padding: 5px; /* Padding around the image */
+            cursor: pointer;
+            margin-top: 20px; /* Space from the text above */
         }
     </style>
 </head>
 <body>
     <div class="content">
-        <h1>Heaven is Online!</h1>
+        <h1>Heaven is Online! (◕‿◕✿)</h1>
         <p>Dumbass stretched out wolf you have to stop. You smoke too tough. Your swag too different. Your bitch too bad. They’ll kill you. Dumbass stretched out wolf:</p>
         <img src="/assets/pictures/sasha.jpg" alt="sasha" title="Dumbass stretched out wolf you have to stop. You smoke too tough. Your swag too different. Your bitch too bad. They’ll kill you. Dumbass stretched out wolf:">
+        <!-- Button with a PNG icon -->
+        <button class="icon-button" onclick="window.location.href='https://downloadmoreram.com';">
+            <img src="/assets/left_arrow.png" alt="Redirect Button">
+        </button>
     </div>
 </body>
 </html>
