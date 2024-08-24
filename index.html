@@ -27,6 +27,11 @@
             margin-top: 0;
             margin-bottom: 20px;
         }
+        .button-row {
+            display: flex;
+            justify-content: flex-start; /* Align buttons to the left */
+            width: 100%; /* Full width to spread out the buttons */
+        }
         .icon-button {
             border: 2px solid white; /* White border around the button */
             background: none;
@@ -46,10 +51,17 @@
         <h1>Heaven is Online! (◕‿◕✿)</h1>
         <p>Dumbass stretched out wolf you have to stop. You smoke too tough. Your swag too different. Your bitch too bad. They’ll kill you. Dumbass stretched out wolf:</p>
         <img src="/assets/pictures/sasha.jpg" alt="sasha" title="Dumbass stretched out wolf you have to stop. You smoke too tough. Your swag too different. Your bitch too bad. They’ll kill you. Dumbass stretched out wolf:">
-        <!-- Button with a PNG icon -->
-        <button class="icon-button" onclick="window.location.href='https://downloadmoreram.com';">
-            <img src="/assets/icons/laika8bit.png" alt="Redirect Button">
-        </button>
+        <div class="button-row">
+            <!-- Button with a PNG icon -->
+            <button class="icon-button" onclick="window.location.href='https://example.com';">
+                <img src="/assets/icons/laika8bit.png" alt="Redirect Button">
+            </button>
+            <!-- Additional buttons can be added here -->
+            <button class="icon-button" onclick="window.location.href='https://another-link.com';">
+                <img src="/assets/icons/another_icon.png" alt="Another Redirect Button">
+            </button>
+            <!-- More buttons as needed -->
+        </div>
     </div>
 </body>
 </html>
