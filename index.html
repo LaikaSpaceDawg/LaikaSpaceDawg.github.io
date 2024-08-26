@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+<!-- TODO Add a "you're about to be re-directed" page?-->
+<!-- TODO Bar with links to other sections/subpages at the top or bottom?-->
 <head>
     <link rel="icon" type="image/png" sizes="64x64" href="/assets/icons/laika8bit.png">
     <style>
@@ -48,6 +50,45 @@
         height: 32px; /* Set the height of the image */
         display: block; /* Removes extra space below the image */
         }
+        .link-row {
+            display: flex;
+            justify-content: flex-start; /* Align buttons to the left */
+            width: 100%; /* Full width to spread out the buttons */
+        }
+        .link-button {
+            border: 2px solid white; /* White border around the button */
+            background: none;
+            padding: 5px; /* Padding around the image */
+            cursor: pointer;
+            margin-top: 20px; /* Space from the text above */
+            margin-right: 20px; /* Space between buttons */
+        } 
+        .link-button:last-child {
+        margin-right: 0; /* No margin for the last button */
+        }
+        .image-row {
+            display: flex;
+            justify-content: flex-start; /* Align images to the left */
+            width: 100%; /* Full width to spread out the images */
+        }
+        .image-row-member {
+            border: 2px solid white; /* White border around the image */
+            background: none;
+            padding: 5px; /* Padding around the image */
+            cursor: pointer;
+            margin-top: 20px; /* Space from the text above */
+            margin-right: 20px; /* Default space between images */
+        }
+
+        .image-row-member:last-child {
+            margin-right: 0; /* No margin for the last image */
+        }
+
+        .image-row-member img {
+            width: auto; /* Width will be set via data attribute */
+            height: auto; /* Height will be set via data attribute */
+            display: block; /* Removes extra space below the image */
+        }
     </style>
 </head>
 <body>
@@ -61,10 +102,18 @@
                 <img src="/assets/icons/laika8bit.png" alt="Redirect Button">
             </button>
             <!-- Additional buttons can be added here -->
-            <button class="icon-button" onclick="window.location.href='https://another-link.com';">
+            <button class="icon-button" onclick="window.location.href='https://example.com';">
                 <img src="/assets/icons/another_icon.png" alt="Another Redirect Button">
             </button>
             <!-- More buttons as needed -->
+        </div>
+        <div class="image-row">
+            <div class="image-row-member" style="margin-right: 20px;">
+                <img src="/assets/pictures/enemy_signals_team-app6.png" style="width: 100px; height: 80px;">
+            </div>
+            <div class="image-row-member" style="margin-right: 20px;">
+                <img src="/assets/pictures/enemy_repair_team-app6.png" style="width: 100px; height: 80px;">
+            </div>
         </div>
     </div>
 </body>
