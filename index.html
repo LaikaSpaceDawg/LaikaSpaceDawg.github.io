@@ -78,21 +78,29 @@
             cursor: pointer;
             margin-top: 20px; /* Space from the text above */
             margin-right: 20px; /* Default space between images */
+            border-radius: 10px; /* Rounded corners for the background */
         }
-
         .image-row-member:last-child {
             margin-right: 0; /* No margin for the last image */
         }
-
         .image-row-member img {
             width: auto; /* Width will be set via data attribute */
             height: auto; /* Height will be set via data attribute */
             display: block; /* Removes extra space below the image */
         }
+
+        .horizontal-divider {
+            height: 2px; /* Thickness of the divider */
+            background-color: white; /* Color of the divider */
+            width: 100%; /* Divider takes the full width of its container */
+            margin: 20px 0; /* Spacing above and below the divider */
+        }
     </style>
 </head>
 <body>
     <div class="content">
+        <div class="horizontal-divider"></div>
+        <div class="horizontal-divider"></div>
         <h1>Heaven is Online! (◕‿◕✿)</h1>
         <p>Dumbass stretched out wolf you have to stop. You smoke too tough. Your swag too different. Your bitch too bad. They’ll kill you. Dumbass stretched out wolf:</p>
         <img src="/assets/pictures/sasha.jpg" alt="sasha" title="Dumbass stretched out wolf you have to stop. You smoke too tough. Your swag too different. Your bitch too bad. They’ll kill you. Dumbass stretched out wolf:">
@@ -107,6 +115,7 @@
             </button>
             <!-- More buttons as needed -->
         </div>
+        <div class="horizontal-divider"></div>
         <div class="image-row">
             <div class="image-row-member" style="margin-right: 20px;">
                 <img src="/assets/pictures/enemy_signals_team-app6.png" style="width: 80px; height: 100px;">
