@@ -5,9 +5,10 @@
     <link rel="icon" type="image/png" sizes="64x64" href="/assets/icons/laika8bit.png">
     <style>
         :root {
-            --text-color: white;
-            --space-height: 10px;
-            --font-size: 0.8em;
+            --text-color: white;    /* Tag used in variably setting color */
+            --space-height: 10px;     /* Tag used in variably setting spacer height/margins */
+            --font-size: 0.8em;       /* Tag used in variably setting paragraph font size */
+            --button-size: 32px;      /* Tag used in variably setting button image size */
         }
         body {
             display: flex;
@@ -21,96 +22,97 @@
         }
         .content {
             display: flex;
-            flex-direction: column; /* Ensures elements are stacked vertically */
-            align-items: center; /* Centers children horizontally */
-            width: 60%; /* Takes full width to ensure contained elements can align properly */
+            flex-direction: column; 
+            align-items: center; 
+            width: 60%; 
         }
+        
         h1, p, n{
             color: var(--text-color);
         }
-        p {
+        p {                                    /* Paragraph text style */
             font-size: var(--font-size);
             font-weight: normal;
             margin-top: 0;
             margin-bottom: 20px;
         }
-        n {
+        n {                                    /* Note text style */
             font-size: 0.4em;
             font-weight: normal;
             margin-top: 0;
             margin-bottom: 0;
         }
-        .button-row {
-            display: flex;
-            justify-content: flex-start; /* Align buttons to the left */
-            width: 100%; /* Full width to spread out the buttons */
-        }
 
+        .button-row {                          /* Evenly spaced clickable image row container */
+            display: flex;
+            justify-content: flex-start;           /* Align buttons horizontally */
+            width: 100%; 
+        }
         .icon-button {
-            border: 2px solid white; /* White border around the button */
+            border: 2px solid white; 
             background: none;
-            padding: 5px; /* Padding around the image */
+            padding: 5px; 
             cursor: pointer;
-            margin-top: 20px; /* Space from the text above */
-            margin-right: 20px; /* Space between buttons */
+            margin-top: 20px; 
+            margin-right: 20px; 
         } 
         .icon-button:first-child {
-        margin-left: 20; /* No margin for the last button */
+        margin-left: 20;                            /* Increased indent for first button */
         }
         .icon-button:last-child {
-        margin-right: 0; /* No margin for the last button */
+        margin-right: 0;                            /* No margin for last button */
         }
         .icon-button img {
-        width: 32px; /* Set the width of the image */
-        height: 32px; /* Set the height of the image */
-        display: block; /* Removes extra space below the image */
+        width: var(--button-size);                  /* Variably set the width of the image */
+        height: var(--button-size);                 /* Variably set the height of the image */
+        display: block; 
         }
 
-        .link-row {
+        .link-row {                             /* Evenly spaced link row container */
             display: flex;
-            justify-content: space-between; /* This will space the links equally */
-            width: 100%; /* Set the width to full container width */
-            padding: 0 20px; /* Optional: Padding on the sides if you want some space from the container's edges */
+            justify-content: space-between; 
+            width: 100%; 
+            padding: 0 20px; 
         }
-        .link-row a {
-            text-decoration: none; /* Optional: Removes underline from links */
-            color: white; /* Sets the text color */
-            background: #333; /* Optional: Sets a background color for the links */
-            padding: 10px; /* Gives some padding around the text for better readability */
-            border-radius: 5px; /* Optional: Rounds the corners of the links */
+        .link-row a {                           /* Link row member attributes */
+            text-decoration: none; 
+            color: white;
+            background: #333; 
+            padding: 10px; 
+            border-radius: 5px; 
         }
 
-        .image-row {
+        .image-row {                            /* Evenly spaced image row container */
             display: flex;
-            justify-content: flex-start; /* Align images to the left */
-            width: 100%; /* Full width to spread out the images */
+            justify-content: flex-start; 
+            width: 100%; 
         }
-        .image-row-member {
-            border: 2px solid white; /* White border around the image */
+        .image-row-member {                     /* Image row member attributes */
+            border: 2px solid white; 
             background: #383a40;
-            padding: 5px; /* Padding around the image */
-            margin-top: 20px; /* Space from the text above */
-            margin-right: 20px; /* Default space between images */
-            border-radius: 10px; /* Rounded corners for the background */
+            padding: 5px;                          
+            margin-top: 20px; 
+            margin-right: 20px; 
+            border-radius: 10px;                   /* Border radius rounds outline corners */
         }
         .image-row-member:last-child {
-            margin-right: 0; /* No margin for the last image */
+            margin-right: 0; 
         }
         .image-row-member img {
-            width: auto; /* Width will be set via data attribute */
-            height: auto; /* Height will be set via data attribute */
-            display: block; /* Removes extra space below the image */
+            width: auto; 
+            height: auto; 
+            display: block; 
         }
 
-        .horizontal-divider {
-            height: 2px; /* Thickness of the divider */
-            background-color: white; /* Color of the divider */
-            width: 100%; /* Divider takes the full width of its container */
-            margin-top: var(--space-height); /* Spacing above and below the divider */
-            margin-bottom: var(--space-height);
+        .horizontal-divider {                   /* Horizontal Line Divider */
+            height: 2px; 
+            background-color: white; 
+            width: 100%; 
+            margin-top: var(--space-height);        /* Variable spacer margin height */
+            margin-bottom: var(--space-height);     /* Variable spacer margin height */
         }
 
-        .spacer {
+        .spacer {                               /* Invisible Space Block To Emulate Margins */
             display: block;
             height: var(--space-height);
             width: 100;
