@@ -105,7 +105,8 @@
             height: 2px; /* Thickness of the divider */
             background-color: white; /* Color of the divider */
             width: 100%; /* Divider takes the full width of its container */
-            margin: 20px 0; /* Spacing above and below the divider */
+            margin-top: var(--space-height); /* Spacing above and below the divider */
+            margin-bottom: var(--space-height);
         }
 
         .spacer {
@@ -118,7 +119,7 @@
 <body>
     <div class="content">
         <h1>Heaven is Online! (◕‿◕✿)</h1>
-        <div class="horizontal-divider"></div>
+        <div class="horizontal-divider" style="--space-height: 10px;"></div>
         <div class="link-row">
             <a href="/index/">Index</a>
         </div>
