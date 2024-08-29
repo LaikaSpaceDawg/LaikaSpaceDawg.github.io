@@ -6,6 +6,7 @@
     <style>
         :root {
             --text-color: white;
+            --space-height: 10px;
         }
         body {
             display: flex;
@@ -35,8 +36,8 @@
         n {
             font-size: 0.4em;
             font-weight: normal;
-            margin-top: 10px;
-            margin-bottom: 10px;
+            margin-top: 0;
+            margin-bottom: 0;
         }
         .button-row {
             display: flex;
@@ -106,6 +107,12 @@
             width: 100%; /* Divider takes the full width of its container */
             margin: 20px 0; /* Spacing above and below the divider */
         }
+
+        .spacer {
+            display: block;
+            height: var(--space-height);
+            width: 100;
+        }
     </style>
 </head>
 <body>
@@ -138,6 +145,7 @@
                 <img src="/assets/pictures/enemy_repair_team-app6.png" style="width: 80px; height: 100px;">
             </div>
         </div>
+        <div class="spacer" style="--space-height: 10px;"></div>
         <n style="--text-color: grey;">This text should be grey.</n>
     </div>
 </body>
