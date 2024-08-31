@@ -6,7 +6,8 @@
     <style>
         :root {
             --text-color: white;    /* Tag used in variably setting color */
-            --space-height: 10px;     /* Tag used in variably setting spacer height/margins */
+            --spacer-height: 10px;    /* Tag used in variably setting spacer height */
+            --spacer-width: 10px;     /* Tag used in variably setting spacer width */
             --font-size: 0.8em;       /* Tag used in variably setting paragraph font size */
             --button-size: 32px;      /* Tag used in variably setting button image size */
         }
@@ -112,17 +113,22 @@
             margin-bottom: var(--space-height);     /* Variable spacer margin height */
         }
 
-        .spacer {                               /* Invisible Space Block To Emulate Margins */
+        .vertical-spacer {                               /* Invisible Space Block To Emulate Margins */
             display: block;
             height: var(--space-height);
             width: 100;
+        }
+        .horizontal-spacer {
+            display: block;
+            height: var(--spacer-height); /* TODO definetly needs to be done better */
+            width: var(--spacer-width);
         }
     </style>
 </head>
 <body>
     <div class="content">
         <h1>Heaven is Online! (◕‿◕✿)</h1>
-        <div class="horizontal-divider" style="--space-height: 10px;"></div>
+        <div class="horizontal-divider" style="--spacer-height: 10px;"></div>
         <div class="link-row">
             <a href="/index/">Index</a>
         </div>
@@ -149,7 +155,7 @@
                 <img src="/assets/pictures/enemy_repair_team-app6.png" style="width: 80px; height: 100px;">
             </div>
         </div>
-        <div class="spacer" style="--space-height: 10px;"></div>
+        <div class="vertical-spacer" style="--spacer-height: 10px;"></div>
         <n style="--text-color: grey;">This text should be grey.</n>
     </div>
 </body>
