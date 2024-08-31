@@ -6,6 +6,13 @@ permalink: /index/
 <head>
     <link rel="icon" type="image/png" sizes="64x64" href="assets/icons/laika8bit.png">
     <style>
+        :root {
+            --text-color: white;    /* Tag used in variably setting color */
+            --spacer-height: 10px;    /* Tag used in variably setting spacer height */
+            --spacer-width: 10px;     /* Tag used in variably setting spacer width */
+            --font-size: 0.8em;       /* Tag used in variably setting paragraph font size */
+            --button-size: 32px;      /* Tag used in variably setting button image size */
+        }
         body {
             display: flex;
             justify-content: center;
@@ -35,7 +42,7 @@ permalink: /index/
             margin: 20px 0;
         }
         a {
-            color: white;
+            color: var(--text-color);
             text-decoration: none;
             border: 2px solid white;
             padding: 5px;
