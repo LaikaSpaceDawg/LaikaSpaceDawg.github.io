@@ -7,6 +7,11 @@ permalink: /placeholder/
     <meta charset="UTF-8">
     <title>Work In Progress</title>
     <style>
+        :root {
+            --gradient-color-one: yellow;
+            --gradient-color-two: black;
+            --text-color: white;
+        }
         body {
             margin: 0;
             padding: 0;
@@ -23,10 +28,10 @@ permalink: /placeholder/
             height: 50px;
             background-image: repeating-linear-gradient(
                 45deg,
-                yellow,
-                yellow 10px,
-                black 10px,
-                black 20px
+                var(--gradient-color-one),
+                var(--gradient-color-one) 10px,
+                var(--gradient-color-two) 10px,
+                var(--gradient-color-two) 20px
             );
         }
         h1 {
@@ -46,7 +51,7 @@ permalink: /placeholder/
             margin: 20px 0;
         }
         a {
-            color: white;
+            color: var(--text-color);
             text-decoration: none;
             border: 2px solid white;
             padding: 5px;
