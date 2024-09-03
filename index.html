@@ -31,16 +31,18 @@
             width: 60%; 
         }
         
-        h1, p, n{
-            color: var(--text-color);
+        h1 {
+            color: var(--text-color-header);
         }
         p {                                    /* Paragraph text style */
+            color: var(--text-color);
             font-size: var(--font-size);
             font-weight: normal;
             margin-top: 0;
             margin-bottom: 20px;
         }
-        n {                                    /* Note text style */
+        sn {                                   /* Small Note text style */
+            color: var(--text-color-note);
             font-size: 0.4em;
             font-weight: normal;
             margin-top: 0;
@@ -159,7 +161,7 @@
             </div>
         </div>
         <div class="vertical-spacer" style="--spacer-height: 10px;"></div>
-        <n style="--text-color: grey;">This text should be grey.</n>
+        <sn style="--text-color: grey;">This text should be grey.</sn>
     </div>
 </body>
 </html>
