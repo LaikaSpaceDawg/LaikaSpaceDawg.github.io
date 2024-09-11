@@ -11,6 +11,7 @@
             --text-color-note: white;     /* Tag used in variably setting color */
             --spacer-height: 10px;          /* Tag used in variably setting spacer height */
             --spacer-width: 10px;           /* Tag used in variably setting spacer width */
+            --divider-width: 100%;          /* Tag used in variably setting divider width */
             --text-size: 1em;               /* Tag used in variably setting font size */
             --text-size-note: 0.8em;        /* Tag used in variably setting font size */
             --text-size-note-small: 0.4em;  /* Tag used in variably setting font size */
@@ -116,7 +117,7 @@
         .horizontal-divider {                   /* Horizontal Line Divider */
             height: 2px; 
             background-color: white; 
-            width: 100%; 
+            width: var(--divider-width);             /* Variable divider width */
             margin-top: var(--spacer-height);        /* Variable spacer margin height */
             margin-bottom: var(--spacer-height);     /* Variable spacer margin height */
         }
